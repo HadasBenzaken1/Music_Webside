@@ -1,0 +1,396 @@
+body {
+  background-color: #f1f3f4;
+  font-family:Century Gothic;
+  direction: ltr;
+}
+
+#guess {
+  color: #31b4ed;
+  border-color: #111;
+  font-size: x-large;
+  padding: 5px;
+}
+#deleteFromFavorite img{
+margin-right: 55px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  /* border-color: #f0e7e7; */
+  margin-bottom: 1px;
+} 
+
+#sort {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+#bi-sort-down{
+  margin-top: 20px;
+ width: 45px;
+ height: 45px;
+ margin-left: 5%;
+}
+#bi-sort-down-alt{
+  width: 45px;
+  height: 45px;
+  transform: rotate(180deg);
+ }
+
+#searchInput {
+  margin-left: 5%;
+  margin-top: 2%;
+  background-image: url('./img/search2.png');
+  /* background-position: 10px 12px; */
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 18px;
+  padding: 12px 20px 12px 60px;
+  border: 4px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.titleSong {
+  color: #ccc;
+}
+
+#singerList{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#filter {
+  font-size: large;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#audioFan {
+  width: 80%;
+  border: #31b4ed 2.5px double;
+  /* border-color: #31b4ed; */
+}
+
+#favorite {
+  text-align: center;
+  font-size: x-large;
+  color: #0e0e0e;
+}
+
+#conect {
+  text-align: center;
+  font-size: x-large;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.name {
+  font-size: larger;
+  z-index: 10;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+h2 {
+  color: #ccc;
+  font-size: 80px;
+}
+
+#drawRandomSong>div>div {
+  /* margin: 10px; */
+  /* width: 370px; */
+  justify-content: center;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(63, 62, 62);
+  text-align: center;
+  padding: 1%;
+}
+
+.logo img {
+  /* border-radius: 50%; */
+  width: 100px;
+  height: 100px;
+}
+
+#drawRandomSong>div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+#drawRandomSong>div>div img {
+  border-top: 2px rgb(22, 22, 22) solid;
+  border-left: 2px rgb(22, 22, 22) solid;
+  border-right: 2px rgb(22, 22, 22) solid;
+  width: 230px;
+  height: 250px;
+  /* border-radius: 50%; */
+
+}
+
+audio {
+  border: 2px solid black;
+  width: 230px;
+  /* background-color: #343434; */
+  /* border-radius: 50%; */
+  /* background-color: green; */
+}
+
+/* #singerList img:hover {
+  opacity: 0.6;
+} */
+
+#singerList>div>div img {
+  border: 3px solid rgb(14, 15, 14);
+  width: 230px;
+  height: 250px;
+  /* border-radius: 50%; */
+}
+#notConect{
+  font-size: larger;
+  color: #ccc;
+}
+
+#singerList>div>div {
+  margin: 10px;
+  /* width: 300px; */
+  direction: rtl;
+  justify-content: center;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(42, 41, 41);
+  text-align: center;
+  /* padding: 1%; */
+}
+
+#singerList>div {
+  display: flex;
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  /* margin-right: 10%; */
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.homepic {
+  margin: 5px;
+}
+
+
+
+/* .icon:hover{
+  border-color: #f44336;
+} */
+/* //log in */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.man {
+  border-radius: 50%;
+
+}
+
+#man {
+  text-align: center;
+  color: #ccc;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 32%;
+  margin-left: 4%;
+}
+
+/* ///שירים במסך הבית */
+#special {
+  display: none;
+}
+
+#icon {
+  color: white;
+  font-size: large;
+  background-color: #454444;
+  height: 15vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+  height: 80%;
+}
+
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: rgb(226, 221, 221);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #343434;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+  border: #343434 4px solid;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
